@@ -54,7 +54,7 @@ function createLegend() {
 
 function createMap(earthquakes) {
 
-    // Define streetmap layers
+    // Define streetmap
     const streetmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
         attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
         maxZoom: 18,
@@ -63,12 +63,12 @@ function createMap(earthquakes) {
     });
 
 
-    // Define a baseMaps object to hold our base layers
+    // Define baseMaps 
     const baseMaps = {
         "Streets Map": streetmap
     };
 
-    // Create overlay object to hold our overlay layer
+    // Create overlay object
     const overLayers = {
         "Earthquakes": earthquakes
     };
